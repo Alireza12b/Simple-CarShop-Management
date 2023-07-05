@@ -21,7 +21,29 @@ namespace Services.ProductServices
             };
         }
 
+        public IEnumerable<Product> GetAllProduct()
+        {
+            return products;
+        }
 
+        public void Delete(int productid)
+        {
+            var findproduct = products.First(p => p.ID == productid);
+            products.Remove(findproduct);
+        }
+
+        public void Edit(int id, string name, int price)
+        {
+            var findproduct = products.First(p => p.ID == id);
+            findproduct.ProductName = name;
+            findproduct.Price = price;
+        }
+
+        public Product GetProductById(int id)
+        {
+            var findproduct = products.First(p => p.ID == id);
+            return findproduct;
+        }
     }
 }
 
