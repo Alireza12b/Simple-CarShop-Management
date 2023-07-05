@@ -17,9 +17,17 @@ namespace CarShopManagement.Pages.Products
         [BindProperty]
         public Product Product { get; set; }
 
-        public void OnGet(int id)
+        public IActionResult OnGet(int id)
         {
             Product = _productRepository.GetProductById(id);
+            if (Product == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }

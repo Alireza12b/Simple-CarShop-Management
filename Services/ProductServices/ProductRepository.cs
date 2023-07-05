@@ -43,7 +43,14 @@ namespace Services.ProductServices
         public Product GetProductById(int id)
         {
             var findproduct = products.First(p => p.ID == id);
-            return findproduct;
+            if (findproduct != null)
+            {
+                return findproduct;
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }
