@@ -4,7 +4,7 @@
 }
 
 <div class="d-flex container">
-    @foreach (var item in Model.Product)
+    @foreach (var item in Model?.Product)
     {
         var photopath = "~/img/" + item.ImgPath;
 
