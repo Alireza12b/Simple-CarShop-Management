@@ -1,6 +1,13 @@
 html {
   font-size: 14px;
-  background-color
+}
+
+.bg-color {
+    background-color: rgb(197, 208, 180) !important;
+}
+
+body {
+    background-color: rgb(197, 208, 180) !important;
 }
 
 @media (min-width: 768px) {
@@ -24,5 +31,10 @@ img {
 }
 
 .card {
-    background-color: rgb(145, 238, 255) !important;
+    background-color: rgb(173, 218, 122) !important;
 }
+
+.btn {
+    background-color: rgb(40, 135, 26) !important;
+}
+

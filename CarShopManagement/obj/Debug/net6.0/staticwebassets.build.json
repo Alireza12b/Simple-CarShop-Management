@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D40YEI3YxWr2IZqWnNdJ6s7Y4ZOF1QthH1tMluSgUus=",
+  "Hash": "N3/2+JkO2YQL0w+R3w15v7khdVUIJmlyvAkQoZ3iGJo=",
   "Source": "CarShopManagement",
   "BasePath": "_content/CarShopManagement",
   "Mode": "Default",
@@ -102,12 +102,12 @@
       "OriginalItemSpec": "wwwroot\\img\\1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Alireza\\source\\repos\\CarShopManagement\\CarShopManagement\\wwwroot\\img\\2.jpg",
+      "Identity": "C:\\Users\\Alireza\\source\\repos\\CarShopManagement\\CarShopManagement\\wwwroot\\img\\2.jpG",
       "SourceId": "CarShopManagement",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Alireza\\source\\repos\\CarShopManagement\\CarShopManagement\\wwwroot\\",
       "BasePath": "_content/CarShopManagement",
-      "RelativePath": "img/2.jpg",
+      "RelativePath": "img/2.jpG",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,7 +116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\2.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\2.jpG"
     },
     {
       "Identity": "C:\\Users\\Alireza\\source\\repos\\CarShopManagement\\CarShopManagement\\wwwroot\\img\\3.jpg",

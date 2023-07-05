@@ -3,7 +3,7 @@
 @{
 }
 
-<div class="d-flex container">
+<div class="d-flex container bg-color">
     @foreach (var item in Model?.Product)
     {
         var photopath = "~/img/" + item.ImgPath;
@@ -13,7 +13,7 @@
             <div class="card-body">
                 <h5 class="card-title">@item.ProductName</h5>
                 <p class="card-text">@item.Price</p>
-                <div class="d-flex">
+                <div class="d-flex align-items-center justify-content-between">
                     <form asp-action="OnPost" method="post">
                         <input hidden name="productid" value="@item.ID">
                         <button type="submit" href="#" class="btn btn-primary">Delete</button>
