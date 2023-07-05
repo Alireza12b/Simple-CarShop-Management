@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Services.Interface
 {
-    internal interface IProductRepository
+    public interface IProductRepository
     {
         IEnumerable<Product> GetAllProduct();
         void Delete(int productid);
