@@ -1,4 +1,5 @@
 ﻿using Models;
+using Services.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Services.ProductServices
 {
-    public class ProductRepository
+    public class ProductRepository : IProductRepository 
     {
         private List<Product> products;
         public ProductRepository()

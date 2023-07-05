@@ -1,0 +1,15 @@
+C:\Users\Alireza\source\repos\CarShopManagement\Services\bin\Debug\net6.0\Services.deps.json
+C:\Users\Alireza\source\repos\CarShopManagement\Services\bin\Debug\net6.0\Services.dll
+C:\Users\Alireza\source\repos\CarShopManagement\Services\bin\Debug\net6.0\Services.pdb
+C:\Users\Alireza\source\repos\CarShopManagement\Services\bin\Debug\net6.0\Models.dll
+C:\Users\Alireza\source\repos\CarShopManagement\Services\bin\Debug\net6.0\Models.pdb
+C:\Users\Alireza\source\repos\CarShopManagement\Services\obj\Debug\net6.0\Services.csproj.AssemblyReference.cache
+C:\Users\Alireza\source\repos\CarShopManagement\Services\obj\Debug\net6.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alireza\source\repos\CarShopManagement\Services\obj\Debug\net6.0\Services.AssemblyInfoInputs.cache
+C:\Users\Alireza\source\repos\CarShopManagement\Services\obj\Debug\net6.0\Services.AssemblyInfo.cs
+C:\Users\Alireza\source\repos\CarShopManagement\Services\obj\Debug\net6.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Alireza\source\repos\CarShopManagement\Services\obj\Debug\net6.0\Services.csproj.CopyComplete
+C:\Users\Alireza\source\repos\CarShopManagement\Services\obj\Debug\net6.0\Services.dll
+C:\Users\Alireza\source\repos\CarShopManagement\Services\obj\Debug\net6.0\refint\Services.dll
+C:\Users\Alireza\source\repos\CarShopManagement\Services\obj\Debug\net6.0\Services.pdb
+C:\Users\Alireza\source\repos\CarShopManagement\Services\obj\Debug\net6.0\ref\Services.dll
