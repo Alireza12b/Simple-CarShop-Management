@@ -10,7 +10,7 @@ builder.Services.AddSingleton<IProductRepository , ProductRepository>();
 
 builder.Services.AddMvc().AddRazorPagesOptions(options =>
 {
-    options.Conventions.AddPageRoute("/Products/Index", "");
+    options.Conventions.AddPageRoute("/products/index", "");
 });
 
 var app = builder.Build();

@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  background-color
 }
 
 @media (min-width: 768px) {
@@ -15,4 +16,13 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+img {
+    width: 600px;
+    height: 200px;
+}
+
+.card {
+    background-color: rgb(145, 238, 255) !important;
 }
