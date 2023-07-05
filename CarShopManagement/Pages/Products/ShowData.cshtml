@@ -1,4 +1,14 @@
 ﻿@page
 @model CarShopManagement.Pages.Products.ShowDataModel
 @{
+    var photopath = "~/img/" + Model.Product.ImgPath;
 }
+
+<div class="container">
+    <img src="@photopath" asp-append-version="true" class="img-card" />
+    <h1 class="mt-4">@Model.Product.ProductName</h1>
+    <h3>Price : @Model.Product.Price $</h3>
+    <h5>Product Barcode = @Model.Product.Barcode</h5>
+    <p>@Model.Product.Description</p>
+    <a asp-page="/products/index" class="btn btn-primary">Back to Menu</a>
+</div>

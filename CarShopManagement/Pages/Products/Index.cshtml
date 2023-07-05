@@ -9,7 +9,7 @@
         var photopath = "~/img/" + item.ImgPath;
 
         <div class="card" style="width: 18rem;">
-            <img src="@photopath" class="card-img-top" asp-append-version="true" alt="...">
+            <img src="@photopath" class="card-img-top img-card" asp-append-version="true" alt="...">
             <div class="card-body">
                 <h5 class="card-title">@item.ProductName</h5>
                 <p class="card-text">@item.Price</p>
@@ -18,8 +18,8 @@
                         <input hidden name="productid" value="@item.ID">
                         <button type="submit" href="#" class="btn btn-primary">Delete</button>
                     </form>
-                    <a asp-page="/Products/Edit" class="btn btn-primary" asp-route-id="@item.ID">Edit</a>
-                    <a asp-page="/Products/ShowDetail" class="btn btn-primary" asp-route-id="@item.ID">Show Detail</a>
+                    <a asp-page="/products/edit" class="btn btn-primary" asp-route-id="@item.ID">Edit</a>
+                    <a asp-page="/products/showdata" class="btn btn-primary" asp-route-id="@item.ID">Show Detail</a>
                 </div>
             </div>
         </div>
