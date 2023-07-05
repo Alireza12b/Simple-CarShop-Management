@@ -1,5 +1,17 @@
-﻿@page
+﻿@page 
 @model CarShopManagement.Pages.Products.EditModel
 @{
 }
 
+<form asp-action="" method="post">
+    <div class="mb-3">
+        <label for="name" class="form-label">Product Name</label>
+        <input type="text" class="form-control" name="name" asp-for="@Model.Product.ProductName" id="name">
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input type="number" class="form-control" name="price" asp-for="@Model.Product.Price" id="price">
+        <input type="hidden" value="@Model.Product.ID" name="ID">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

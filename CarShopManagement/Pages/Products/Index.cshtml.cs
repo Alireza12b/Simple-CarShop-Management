@@ -22,10 +22,11 @@ namespace CarShopManagement.Pages.Products
             Product = _productRepository.GetAllProduct();
         }
 
-        public void OnPost(int productid)
+        public IActionResult OnPost(int productid)
         {
             _productRepository.Delete(productid);
             Product = _productRepository.GetAllProduct();
+            return RedirectToPage("Index");
         }
     }
 }
