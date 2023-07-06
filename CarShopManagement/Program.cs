@@ -1,3 +1,4 @@
+using CarShopManagement;
 using Microsoft.Extensions.Options;
 using Services.Interface;
 using Services.ProductServices;
@@ -8,6 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 builder.Services.AddSingleton<IProductRepository , ProductRepository>();
+
+builder.Services.Configure<RouteOptions>(options =>
+{
+    options.ConstraintMap.Add("negative", typeof(NegativeConstraint));
+});
 
 builder.Services.AddMvc().AddRazorPagesOptions(options =>
 {

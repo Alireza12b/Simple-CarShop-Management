@@ -3,7 +3,7 @@
 @{
 }
 
-<form asp-action="" method="post">
+<form asp-action="Index" asp-controller="Products" method="post">
     <div class="mb-3">
         <label for="name" class="form-label">Product Name</label>
         <input type="text" class="form-control" name="name" asp-for="@Model.Product.ProductName" id="name">

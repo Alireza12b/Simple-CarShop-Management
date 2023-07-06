@@ -1,4 +1,4 @@
-﻿@page "/products/view/{id}"
+﻿@page "/products/view/{id:negative}"
 @model CarShopManagement.Pages.Products.ShowDataModel
 @{
     var photopath = "~/img/" + Model.Product.ImgPath;
