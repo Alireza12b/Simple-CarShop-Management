@@ -8,14 +8,19 @@ namespace CarShopManagement.Pages.Products
     public class EditModel : PageModel
     {
         private readonly IProductRepository _productRepository;
-
-        public EditModel(IProductRepository productRepository)
+        private readonly IWebHostEnvironment _webHostEnvironment1;
+        
+        public EditModel(IProductRepository productRepository, IWebHostEnvironment webHostEnvironment)
         {
             _productRepository = productRepository;
+            _webHostEnvironment1 = webHostEnvironment;
         }
 
         [BindProperty]
         public Product Product { get; set; }
+
+        [BindProperty]
+        public Product Photo { get; set; }
 
         public void OnGet(int id)
         {

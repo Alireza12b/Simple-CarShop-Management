@@ -1,6 +1,7 @@
 ﻿@page "/Products/Edit/{id}"
 @model CarShopManagement.Pages.Products.EditModel
 @{
+    var photopath = "~/img/" + Model.Product.ImgPath;
 }
 
 <form asp-action="Index" asp-controller="Products" method="post">
@@ -11,8 +12,24 @@
     <div class="mb-3">
         <label for="price" class="form-label">Price</label>
         <input type="number" class="form-control" name="price" asp-for="@Model.Product.Price" id="price">
-        <input type="hidden" value="@Model.Product.ID" name="ID">
     </div>
+    <div class="mb-3">
+        <label for="photo" class="form-label">Photo</label>
+        <input type="file" class="form-control" name="photo" asp-for="@Model.Product.ImgPath" id="photo">
+    </div>
+    <input type="hidden" value="@Model.Product.ID" name="ID">
     <button type="submit" class="btn btn-primary">Submit</button>
     <a asp-page="/products/index" class="btn btn-primary">Cancel</a>
+
+    @section Scripts {
+        <script>
+            $(document).ready(function () {
+                $('#photo').on("change", function () {
+                    var filename = $(this).val().split("\\").pop();
+                    $(this).next('#photo').html(filename);
+                });
+            });
+        </script>
+    }
+
 </form>
