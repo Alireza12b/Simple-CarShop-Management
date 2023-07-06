@@ -1,19 +1,20 @@
-﻿@page "/products/view/{id:negative}"
+﻿@page "/products/view/{id}"
 @model CarShopManagement.Pages.Products.ShowDataModel
 @{
     var photopath = "~/img/" + Model.Product.ImgPath;
 }
 
-<h2>Notification's Settings'</h2>
+<h2>Notification's Settings</h2>
 <form method="post" class="border-bottom mb-5" asp-page-handler="UpdateNotifications">
     <div class="form-check">
         <input asp-for="Notify" class="form-check-input" />
-        <label asp-for="Notify" class="form-check-label">Notify me via email </label>
+        <label asp-for="Notify" class="form-check-label">Notify me via email</label>
     </div>
-
-    <button type="submit" class="btn btn-primary">Submit Settings</button>
-    <div class="alert alert-primary">@Model.Message</div>
-
+    <button type="submit" class="btn btn-primary mt-2">Submit Settings</button>
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <div class="alert alert-primary mt-3">@Model.Message</div>
+    }
 </form>
 
 <div class="container">
