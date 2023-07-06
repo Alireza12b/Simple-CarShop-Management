@@ -17,6 +17,11 @@ namespace CarShopManagement.Pages.Products
         [BindProperty]
         public Product Product { get; set; }
 
+        [BindProperty]
+        public bool Notify { get; set; }
+
+        public string Message { get; set; }
+
         public IActionResult OnGet(int id)
         {
             Product = _productRepository.GetProductById(id);
@@ -28,6 +33,20 @@ namespace CarShopManagement.Pages.Products
             {
                 return Page();
             }
+        }
+
+        public void OnPostUpdateNotifications(int id)
+        {
+            if (Notify)
+            {
+                Message = "Notifications Turned ON . Thank You !";
+            }
+            else
+            {
+                Message = "Notifications Turned OFF";
+            }
+
+            Product = _productRepository.GetProductById(id);
         }
     }
 }

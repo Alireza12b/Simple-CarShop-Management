@@ -4,6 +4,18 @@
     var photopath = "~/img/" + Model.Product.ImgPath;
 }
 
+<h2>Notification's Settings'</h2>
+<form method="post" class="border-bottom mb-5" asp-page-handler="UpdateNotifications">
+    <div class="form-check">
+        <input asp-for="Notify" class="form-check-input" />
+        <label asp-for="Notify" class="form-check-label">Notify me via email </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Settings</button>
+    <div class="alert alert-primary">@Model.Message</div>
+
+</form>
+
 <div class="container">
     <img src="@photopath" asp-append-version="true" class="img-card" />
     <h1 class="mt-4">@Model.Product.ProductName</h1>
